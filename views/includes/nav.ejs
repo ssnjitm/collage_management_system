@@ -1,0 +1,128 @@
+<!-- This is navbar  -->
+
+
+<style>
+    .header {
+        min-height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('../images/collage.jpg');
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    
+    .logo_name {
+        margin-left: 2px;
+        color: blue;
+        font-size: 30px;
+    }
+    
+    #logo-sub {
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: normal;
+        color: red;
+    }
+    
+    nav {
+        display: flex;
+        padding: 2% 6%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav img {
+        width: 90px;
+    }
+    
+    .nav-links {
+        flex: 1;
+        text-align: right;
+        justify-content: space-between;
+    }
+    
+    .nav-links ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12x;
+        position: relative;
+        justify-content: space-between;
+        margin-right: 25px;
+    }
+    
+    .nav-links ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 13px;
+        margin-right: 25px;
+    }
+    
+    .nav-links ul li ::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: #f44336;
+        display: block;
+    }
+    
+    .nav-links ul li :hover::after {
+        width: 100%;
+    }
+    
+    nav.fa {
+        display: none;
+    }
+    
+    @media(max-width:700px) {
+        .text-box h2 {
+            font-size: 9px;
+        }
+        .nav-links ul li {
+            display: block;
+        }
+        .nav-links {
+            position: absolute;
+            background: #f44336;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: 0;
+            text-align: left;
+            z-index: 2;
+        }
+        nav.fa {
+            display: block;
+            color: #fff;
+            font-size: 9px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    }
+</style>
+
+<section class="header">
+    <nav>
+        <a href="index.html"> <img src="../images/" alt="logo">
+        </a>
+        <div class="logo_name">Patan Multiple Campus
+            <h2 id="logo-sub">Patandhoka,Lalitpur</h2>
+
+        </div>
+
+
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li> <a href="aboutus.html">ABOUT</a></li>
+                <li> <a href="course.html">ACADEMICS</a></li>
+                <li> <a href="gallery.html">GALLERY</a></li>
+                <li> <a href="contactus.html">CONTACT</a></li>
+                <li> <a href="course.html">DEPARTMENTS</a></li>
+                <li>
+                    <a href="enroll.html">ADMISSION</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+</section>
